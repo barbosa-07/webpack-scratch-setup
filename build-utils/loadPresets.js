@@ -2,6 +2,7 @@ const { merge } = require("webpack-merge");
 
 const applyPreset = (env) => {
   const { presets, mode } = env;
+  console.log(presets);
   /**
    * @type {string[]}
    */

@@ -9,9 +9,14 @@ import { makeColorStyle } from "./button-styles";
 
 const image = makeImage(imageUrl);
 
+const loadFooter = () => import("./footer");
 let botton = makeButton("Yay this is  button");
 botton.style = makeColorStyle("red");
+botton.addEventListener("click", (e) => {
+  loadFooter().then((m) => {
+    document.body.appendChild(m.footer);
+  });
+});
 
 document.body.appendChild(botton);
 document.body.appendChild(image);
-document.body.appendChild(footer);
