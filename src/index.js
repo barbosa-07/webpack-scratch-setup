@@ -3,7 +3,6 @@ import "./footer.css";
 import "./button.css";
 import imageUrl from "./webpack-logo.jpeg";
 import { makeImage } from "./image";
-
 import { footer } from "./footer";
 import makeButton from "./button";
 import { makeColorStyle } from "./button-styles";
